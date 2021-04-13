@@ -1,0 +1,17 @@
+1.Design decisions:
+(1)Exercise 1: use ArrayList to implement tupleDesc
+(2)Exercise 2: use built-in class CatalogItem to store the imformation of a table
+(3)Exercise 3: use a Hashmap to map from pageId to page
+(4)Exercise 4: use class TupleIterator to get a iterator
+(5)Exercise 5: use class HeapFileIterator to get a HeapFile iterator
+(6)Exercise 6: use DBFileIterator to iterator the tuple
+
+
+2.API changes:
+nothing special
+
+3.Missing or incomplete:
+seems to be none
+
+4.Time spent:
+3 days. And there was not anything very difficult.
