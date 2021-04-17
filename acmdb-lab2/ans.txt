@@ -1,0 +1,17 @@
+1.Design decisions:
+(1)Exercise 1: For page eviction, when the space in the bufferpool is insufficient,  it's going to evict a page at random.
+(2)Exercise 2: use recursive to implement "findLeafPage" function.
+(3)Exercise 3: For splitting pages, create a new page and move half of the tuples to the new page. When splitting InteralPage,  use the middle key to update parent. 
+(4)Exercise 4: For stealing from sibling, move some of tuples from the sibling to the page to make the tuples even. When stealing InternalPage, update the parent entry and its pointers. 
+(5)Exercise 5: For merging page, move all tuples from right pages to left pages and then make the right sibling available. Then update the parent. When merging InteralPages, pull down the key from the parent and move all entries from right to left. 
+
+
+
+2.API changes:
+I add "IndexPredictate.filter" in IndexPredicate.java as a helper function.
+
+3.Missing or incomplete:
+seems not
+
+4.Time spent:
+4 days. I think the most difficult thing is split nodes. We have already write a BPTree during our fresh year, so we can debug much faster.
