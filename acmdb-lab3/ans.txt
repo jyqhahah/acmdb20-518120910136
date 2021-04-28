@@ -1,0 +1,16 @@
+1.Design decisions:
+(1)Exercise 1: Except nested join, use hash equi-join. One problem is it may scan the second table many times.
+(2)Exercise 2: Use HashMap to record aggregation results. Use a new helper class "pair" to calculate "AVG".
+(3)Exercise 3: When Insert, find the first empty slot . When delete, use HeapPage.deleteTuple.
+(4)Exercise 4: Use Dbfile.insertTuple and deleteTuple.
+
+
+
+2.API changes:
+None.
+
+3.Missing or incomplete:
+seems not
+
+4.Time spent:
+4 days. I find a bug when I try to pass the AggregateTest. I find a previous bug in the tupleDesc because when I implement equal, I compare both field name and field type, which only needs to compare the field type.
