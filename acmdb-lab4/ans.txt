@@ -1,0 +1,13 @@
+1.Design decisions:
+(1)Exercise 1: Use  new class HistogramBar to record the bar of histogram.
+(2)Exercise 2: Check the field type(INT or STRING) and create the histograms.
+(3)Exercise 3: Implement the simple estimation of the cost of join.
+
+2.API changes:
+None.
+
+3.Missing or incomplete:
+seems not
+
+4.Time spent:
+2 days. The most difficult thing is to understand the optimization algorithm.
