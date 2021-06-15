@@ -1,0 +1,11 @@
+1.Design decisions:
+Cycle-detection in dependency graph structure has been implemented to detect deadlock. There are two type of lock, SHARED and EXCLUSIVE. The locking granularity is at page level.
+
+2.API changes:
+None.
+
+3.Missing or incomplete:
+seems not
+
+4.Time spent:
+4 days. I spent a lot of time to debug the code of multi-thread transactions. The most difficult thing is to design the lock manager. 
